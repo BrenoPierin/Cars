@@ -64,6 +64,7 @@ h1{
     font-size: 2em;
     margin: auto;
     border-radius: 10px;
+    box-shadow: 0px 6px 3px #484848;
 
 
 }
@@ -132,6 +133,7 @@ margin-left: 0.5em;
     font-size: 1em;
     padding: 10px 10px;
     border-radius: 10px;
+    box-shadow: 0px 6px 3px #484848;
 }
 
  .form_cadastro button{
@@ -180,3 +182,128 @@ margin-left: 7em;
 label{
     color: white;
 }
+
+@media (min-width: 426px){
+    .desk{
+    display: block;
+    
+    }
+    .gradient {
+    width: 70%;
+    height: 60px;
+    margin-left: 15%;
+    }
+    }
+
+@media screen and (min-width: 768px){
+
+    .cabeca{
+        height: 100px;
+        }
+        .gradient {
+        width: 70%;
+        height: 60px;
+        margin-left: 15%;
+        }
+        .gradient p{
+        padding-top: 20px;
+        font-size: 1.5em;
+        }
+        .card{
+        width: 70%;
+        }
+        .card img{
+        width: 50%;
+        padding: 25px;
+        }
+        .secao{
+        padding: 0;
+        margin: 0;
+        }
+    .box{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        height: 335px ;
+        background-color: #484848;
+        font-size: 2em;
+        margin: auto;
+        border-radius: 10px;
+        padding: 10px
+    }
+    label{
+        display: flex;
+        justify-content: center;
+    }
+    .box1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+        height: 80% ;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px){
+    
+    .fa-bars{
+        display: none;
+        }
+        .desk{
+        display: flex;
+        }
+        .desk a{
+        color: white;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        padding: 35px;
+        }
+        .desk a:hover{
+        color: black;
+        }
+        .cabeca{
+        height: 200px;
+        }
+        .parte1 img{
+        width: 250px;
+        height: 150px;
+        }
+        .gradient {
+        width: 60%;
+        height: 60px;
+        margin-left: 20%;
+        padding: 10px;
+        }
+        .gradient p{
+        font-size: 3em;
+        padding: 10px;
+        }
+        .card{
+        width: 700px;
+        }
+        .card img{
+        margin-top: 10px;
+        width: 100%;
+        }
+
+    .box{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 80%;
+        height: 400px ;
+        font-size: 3em;
+        padding: 90px;
+
+    }
+    .form_cadastro button{
+        width: 60%;
+        height: 50px;
+        margin-top: 1em;
+       font-size: larger;
+       margin-left: 14em;
+        }
+}
+
