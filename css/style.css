@@ -46,7 +46,43 @@ footer{
     margin-top: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
-    footer .container{
+.box{
+    font-family: "titillium-web";
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 335px ;
+    background-color: #484848;
+    font-size: 2em;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 6px 3px #484848;
+
+
+}
+.form_cadastro{
+    width: 100%;
+    max-width: 400px;
+    color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    padding: 0.5em ;
+}
+input[type="email"],
+input[type="password"],
+select{
+    border: 1px solid #CCCCCC;
+    color: rgb(255, 255, 255);
+    background-color: #484848;
+    width: 60%;
+    border-radius: 10px;
+}
+.campo{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 1em;
@@ -62,7 +98,7 @@ footer{
     footer ul{
     list-style-type: none;
     }
-    footer .sociais{
+.box1{
     display: flex;
     justify-content: space-evenly;
     color: var(--purple);
@@ -81,6 +117,77 @@ footer{
     justify-content: space-evenly;
     font-size: 1em;
     }
+    .termos label{
+            text-transform: lowercase;
+            margin-left: 0.5em;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    label{
+        color: white;
+    }
+.form_cadastro button{
+        border: none;
+        width: 60%;
+        height: 50px;
+        margin-top: 1em;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+footer{
+box-shadow: 0px 0px 10px black;
+color: white;
+background: rgb(0, 0,0);
+margin-top: 80%;
+}
+footer .container{
+display: flex;
+justify-content: space-between;
+}
+footer img{
+    width: 30%;
+    height: 90%;
+
+
+}
+footer a{
+color: white;
+text-decoration: none;
+padding: 1em;
+}
+footer ul{
+list-style-type: none;
+}
+footer .sociais{
+display: flex;
+flex-direction: column;
+font-size: 2em;
+margin: 1.2em 0px;
+}
+footer h6{
+    display: flex;
+    justify-content: space-evenly;
+padding: 1em;
+color: #474747;
+font-size: 1em;
+
+}
+footer li{
+font-size: 1em;
+text-transform: lowercase;
+}
+footer p{
+text-align: center;
+color: #474747;
+}
+
+/* ========responsividade=============== */
+
+@media (min-width: 425px){
+
+    .fa-bars:before{
+        display: block;
+    }
     footer p{
     text-align: center;
     color: #474747;
@@ -90,10 +197,58 @@ footer{
         width:90%;
         margin:0 auto;
     }
+    footer img {
+        width: 50%;
+        height: 45%;
+        margin-left: 1em;
+        margin-top: 3em;
+    }
+    .cadastro h1 {
+        width: 100%;
+        height: 2em;
+        margin-top: 2em;
+        margin-bottom: -1em;
+    }
+    .sociais{
+        padding: 0 30px;
+    }
+    }
     .cabeca{
         background-color: #484848;
         height: 55px;
         box-shadow: 0px 6px 3px #484848;
+        height: 55px;
+        width: 80%;
+       margin: auto;
+    }
+    .fa-bars:before {
+        display: block;
+    }
+    .b3 {
+        display: none;
+    }
+        .gradient {
+        width: 70%;
+        height: 60px;
+        margin-left: 15%;
+        }
+        .gradient p{
+        padding-top: 20px;
+        font-size: 1.5em;
+        }
+        .card{
+        width: 70%;
+        }
+        .card img{
+        width: 50%;
+        padding: 25px;
+        }
+        .secao{
+        padding: 0;
+        margin: 0;
+        }
+    .box{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         display: flex;
         width:100%;
         justify-content: space-around;
@@ -231,6 +386,21 @@ footer{
         text-decoration: none;
         color:white;
     }
+
+footer .container{
+display: flex;
+justify-content: space-around;
+}
+.sociais i{
+   display: flex;
+   justify-content: space-evenly;
+   padding: 0 30px; 
+}
+footer img {
+    width: 30%;
+    height: 70%;
+    margin-left: 10em;
+    margin-top: 2em;
 }
 @media (max-width:767px){
     .curioso{
@@ -426,4 +596,81 @@ footer{
         padding-left: 20px;
         padding-top: 5px;
     }
+}
+
+
+
+@media screen and (min-width: 1200px){
+    .cabeca{
+        height: 55px;
+        width: 80%;
+       margin: auto;
+    }
+    .fa-bars:before {
+        display: block;
+    }
+    .b3 {
+        display: none;
+    }
+   
+    .box{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 65%;
+        height: 350px ;
+        font-size: 3em;
+        padding: 90px;
+
+    }
+    .box1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 200%;
+        height: auto;
+        padding: 70px;
+
+    }
+    h1{
+        margin: 1em;
+    }
+    .cadastro h1{
+        margin: 1em;
+    }
+
+.form_login button{
+        width: 60%;
+        height: 75px;
+        margin-top: 1em;
+       font-size: larger;
+       margin-left: 5em;
+        }
+.form_cadastro button{
+        width: 80%;
+        height: 75px;
+        margin-top: 3em;
+       font-size: large;
+       margin-left: 2em;
+        }
+        .campo{
+font-size: larger
+        }
+
+ footer .container{
+display: flex;
+justify-content: space-around;
+font-size: 1.3em;
+            }
+ .sociais i{
+   padding: 3px; 
+   font-size: 1em;
+   margin: 0 1em;
+            }
+
+ footer p{
+     font-size: 2em;
+ }
+ footer img {
+    width: 30%;
+    height: 75%;
+    padding-left: 4em;
+ }
+}
 }
