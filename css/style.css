@@ -98,7 +98,7 @@ select{
     footer ul{
     list-style-type: none;
     }
-.box1{
+    .box1{
     display: flex;
     justify-content: space-evenly;
     color: var(--purple);
@@ -192,7 +192,7 @@ color: #474747;
     text-align: center;
     color: #474747;
     }
-@media (min-width: 320px){
+@media (min-width:320px){
     .container{
         width:90%;
         margin:0 auto;
@@ -211,7 +211,6 @@ color: #474747;
     }
     .sociais{
         padding: 0 30px;
-    }
     }
     .cabeca{
         background-color: #484848;
@@ -402,6 +401,13 @@ footer img {
     margin-left: 10em;
     margin-top: 2em;
 }
+    .box1{
+        width: 330px;
+    }
+    .caixa1{
+        width: 315px;
+    }
+}
 @media (max-width:767px){
     .curioso{
         display:none;
@@ -420,14 +426,6 @@ footer img {
     }
     .banner{
         display: none;
-    }
-}
-@media (min-width:320px){
-    .box1{
-        width: 330px;
-    }
-    .caixa1{
-        width: 315px;
     }
 }
 @media (min-width:768px){
