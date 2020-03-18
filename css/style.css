@@ -10,6 +10,81 @@ body{
     width:80%;
     margin:0 auto;
 }
+.cabeca{
+    height: 55px;
+    width: 100%;
+    box-shadow: 0px 6px 3px #484848;
+    background-color: #484848;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.cabeca ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+header a{
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.cabeca i{
+    color:white;
+    font-size:27px;    
+}
+.cabeca img{
+    width: 81px;
+    height: 52px;
+}
+footer{
+    box-shadow: 0px 0px 10px black;
+    color: white;
+    background: rgb(0, 0,0);
+    margin-top: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    footer .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    }
+    footer img{
+    width: 100px;
+    height: 50px;
+    }
+    footer a{
+    color: white;
+    text-decoration: none;
+    }
+    footer ul{
+    list-style-type: none;
+    }
+    footer .sociais{
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--purple);
+    font-size: 2em;
+    padding: 1.2em 0px;
+    }
+    footer h6{
+        display: flex;
+        justify-content: space-evenly;
+    padding-bottom: 1.2em;
+    color: #474747;
+    font-size: 1em;
+    }
+    footer li{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1em;
+    }
+    footer p{
+    text-align: center;
+    color: #474747;
+    }
 @media (min-width: 320px){
     .container{
         width:80%;
@@ -24,9 +99,6 @@ body{
         justify-content: space-around;
         align-items: center;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    .parte1{
-       margin-left: -70px; 
     }
     .parte2{
         margin-right: -70px;
@@ -154,11 +226,22 @@ body{
         justify-content: center;
         border-color: #707070  ;
     }
-    h5{
+    .caixa2 a{
         font-size: 9px;
+        text-decoration: none;
+        color:white;
     }
 }
 @media (max-width:767px){
+    .curioso{
+        display:none;
+    }
+    .tabela{
+        display:none;
+    }
+    .caixao{
+        display:none;
+    }
     .menutablet{
         display: none;
     }
@@ -200,6 +283,10 @@ body{
         height:51px;
         width:92px;
     }
+    .menutablet{
+        display:flex;
+        align-items: center;
+    }
     .menutablet ul {
         display: flex;
         justify-content: space-between;
@@ -209,18 +296,114 @@ body{
         list-style-type: none;
         color: #FFFFFF;
     }
-    .menutablet ul a{
+    .menutablet ul li a{
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
         text-decoration: none;
         color: white;
         font-size: 14px;
     }
-    .banner{
-        box-shadow: 0px 3px 5px #343434;
-    }
     .banner img{
+        box-shadow: 0px 3px 5px #343434;
         width:768px;
     }
     .bestway{
+        font-size: 48px;
+        position: absolute;
+        top: 275px;
+        left: 240px;
         color: white;
+    }
+    .caixao{
+        box-shadow: 0px 3px 6px #343434;
+        width: 710px;
+        height: 229px;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 8px;
+        margin-top: 15px;
+        display: flex;
+    }
+    .caixao img{
+        width:271px;
+        padding-top: 50px;
+        padding-right: 20px;
+    }
+    .caixao p, h4{
+        color:black;
+        text-align: start;
+    }
+    .caixao h4{
+        font-size:35px;
+    }
+    .txt{
+        padding-top: 30px;
+    }
+    .tabela{
+        box-shadow: 0px 3px 6px #343434;
+        width:710px;
+        height: 681px;
+        background-color: #484848;
+        margin: 0 auto;
+        border-radius: 8px;
+        margin-top: 40px;
+    }
+    .tabela h1{
+        margin: 0 auto;
+        padding-top: 60px;
+        font-size: 40px;
+    }
+    .cartoes{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+    .noticias{
+        width:244px;
+        height:464px;
+        background-color: #2E2E2E;
+        display: flex;
+        flex-direction: column;
+    }
+    .noticias img{
+        padding-top: 30px;
+        width:217px;
+        height:122px;
+        margin:0 auto;
+    }
+    .noticias h2{
+        padding-top: -20px;
+        padding-bottom: 20px;
+        font-size: 40px;
+    }
+    .noticias p{
+        text-align:start;
+        font-size: 15px;
+    }
+    .curioso{
+        display: flex;
+        box-shadow: 0px 3px 6px #343434;
+        width:710px;
+        height:236px;
+        background-color: #484848;
+        margin: 0 auto;
+        border-radius: 8px;
+        margin-top: 40px;
+    }
+    .texto h1{
+        font-size:29px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .texto p {
+        text-align: start;
+        padding-left: 25px;
+    }
+    .ibagens img{
+        width:303px;
+        height:171px;
+        padding-top: 35px;
+        padding-right: 30px;
     }
 }
