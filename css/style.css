@@ -127,7 +127,7 @@ margin-left: 0.5em;
     color: white;
 }
 
-.box1{
+.boxL{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -234,29 +234,28 @@ text-align: center;
 color: #474747;
 }
 /* ---------- Peças------------ */
-h1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.testi .p1 h1{
+    width: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
 }
 
 p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.logo{
-    width: 25%; 
-    margin: 20px;
-  
-}
 
 main{
     background-color: rgb(197, 197, 197);
     color: white;
     text-align: center;
-    /* padding-top: 10%; */
+    padding-top: 10%;
     
 }
     
-.banner{
+.bannerdecompra{
     background-color: rgb(90, 90, 90);
     width: 85%;
     height: 350px;
@@ -274,7 +273,7 @@ main{
     padding: 1.5em;
 }
 
-.banner img{
+.bannerdecompra img{
     width: 50%;
     padding-top: 1.5em;
     
@@ -287,16 +286,16 @@ main .campos{
 
 
 @media screen and (min-width: 768px){
-    .banner{
+    .bannerdecompra{
         width: 50%;
     }
 
 
 
 @media screen and (min-width:1200px){
-    .banner{
-        width: 63%;
-        height: 456px;
+    .bannerdecompra{
+        width: 67%;
+        height: 500px;
     }
     
 
@@ -384,7 +383,7 @@ main .campos{
         display: flex;
         justify-content: center;
     }
-    .box1{
+    .boxL{
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -404,7 +403,7 @@ justify-content: space-around;
 footer img {
     width: 30%;
     height: 70%;
-    margin-left: 10em;
+    margin-left: 8em;
     margin-top: 2em;
 }
 
@@ -431,7 +430,7 @@ footer img {
         padding: 90px;
 
     }
-    .box1{
+    .boxL{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width: 200%;
         height: auto;
@@ -478,62 +477,15 @@ font-size: 1.3em;
      font-size: 2em;
  }
  footer img {
-    width: 30%;
-    height: 75%;
-    padding-left: 4em;
+    width: 60%;
+    height: 50%;
+    padding-left: -em;
  }
 }
 }
 }
 /* ------------- novo------------------------------------------------------------------------------------------------ */
-*{
-    margin: 0;
-    padding: 0;
 
-}
-body{
-    background-color: #CCCCCC;
-}
-.container{
-    width:80%;
-    margin:0 auto;
-}
-.cabeca{
-    height: 55px;
-    width: 100%;
-    box-shadow: 0px 6px 3px #484848;
-    background-color: #484848;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.cabeca ul{
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-}
-header a{
-    color: #FFF;
-    text-decoration: none;
-    padding: 5px;
-}
-
-.cabeca i{
-    color:white;
-    font-size:27px;    
-}
-.cabeca img{
-    width: 81px;
-    height: 52px;
-}
-footer{
-    box-shadow: 0px 0px 10px black;
-    color: white;
-    background: rgb(0, 0,0);
-    margin-top: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
 .box{
     font-family: "titillium-web";
     display: flex;
@@ -549,149 +501,14 @@ footer{
 
 
 }
-.form_cadastro{
-    width: 100%;
-    max-width: 400px;
-    color: white;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3em;
-    padding: 0.5em ;
-}
-input[type="email"],
-input[type="password"],
-select{
-    border: 1px solid #CCCCCC;
-    color: rgb(255, 255, 255);
-    background-color: #484848;
-    width: 60%;
-    border-radius: 10px;
-}
-.campo{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-    }
-    footer img{
-    width: 100px;
-    height: 50px;
-    }
-    footer a{
-    color: white;
-    text-decoration: none;
-    }
-    footer ul{
-    list-style-type: none;
-    }
-    .box1{
-    display: flex;
-    justify-content: space-evenly;
-    color: var(--purple);
-    font-size: 2em;
-    padding: 1.2em 0px;
-    }
-    footer h6{
-        display: flex;
-        justify-content: space-evenly;
-    padding-bottom: 1.2em;
-    color: #474747;
-    font-size: 1em;
-    }
-    footer li{
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 1em;
-    }
-    .termos label{
-            text-transform: lowercase;
-            margin-left: 0.5em;
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    label{
-        color: white;
-    }
-.form_cadastro button{
-        border: none;
-        width: 60%;
-        height: 50px;
-        margin-top: 1em;
-        cursor: pointer;
-        border-radius: 10px;
-    }
-footer{
-box-shadow: 0px 0px 10px black;
-color: white;
-background: rgb(0, 0,0);
-margin-top: 80%;
-}
-footer .container{
-display: flex;
-justify-content: space-between;
-}
-footer img{
-    width: 30%;
-    height: 90%;
 
-
-}
-footer a{
-color: white;
-text-decoration: none;
-padding: 1em;
-}
-footer ul{
-list-style-type: none;
-}
-footer .sociais{
-display: flex;
-flex-direction: column;
-font-size: 2em;
-margin: 1.2em 0px;
-}
-footer h6{
-    display: flex;
-    justify-content: space-evenly;
-padding: 1em;
-color: #474747;
-font-size: 1em;
-
-}
-footer li{
-font-size: 1em;
-text-transform: lowercase;
-}
-footer p{
-text-align: center;
-color: #474747;
-}
-
-/* ========responsividade=============== */
-
-@media (min-width: 425px){
-
-    .fa-bars:before{
-        display: block;
-    }
-    footer p{
-    text-align: center;
-    color: #474747;
-}
-}
+  
 @media (min-width:320px){
     .container{
         width:90%;
         margin:0 auto;
     }
-    footer img {
-        width: 50%;
-        height: 45%;
-        margin-left: 1em;
-        margin-top: 3em;
-    }
+
     .cadastro h1 {
         width: 100%;
         height: 2em;
@@ -767,7 +584,7 @@ color: #474747;
         display:flex;
         justify-content: center;
     }
-    .box1{
+    .box11{
         box-shadow: 0px 1px 6px #484848;
         display:flex;
         height: 136px;
@@ -776,7 +593,7 @@ color: #474747;
         font-size: 10px;
         border-radius: 8px;
     }
-    .box1 img{
+    .box11 img{
         width:136px;
     }
     .box2{
@@ -795,7 +612,7 @@ color: #474747;
         padding-left:10px;
         padding-right:10px;
     }
-    .p1{
+    .p3{
         display: flex;
         justify-content: flex-end;
         font-size: 7px;
@@ -875,21 +692,6 @@ color: #474747;
         color:white;
     }
 
-footer .container{
-display: flex;
-justify-content: space-around;
-}
-.sociais i{
-   display: flex;
-   justify-content: space-evenly;
-   padding: 0 30px; 
-}
-footer img {
-    width: 30%;
-    height: 70%;
-    margin-left: 10em;
-    margin-top: 2em;
-}
     .box1{
         width: 330px;
     }
@@ -918,9 +720,6 @@ footer img {
     }
 }
 @media (min-width:768px){
-    .fa-bars{
-        display:none;
-    }
     .container2{   
         width:80%;
         margin: 0 auto;
@@ -1068,37 +867,8 @@ footer img {
         padding-right: 30px;
     }
 }
-@media (max-width: 1365px){
-    .menutablet ul li i{
-        display:none;
-    }
-}
-@media (min-width:1366px){
-    .parte1{
-        display: flex;
-        justify-content: space-around;
-    }
-    .menutablet li i{
-        font-size: 20px;
-        padding-left: 20px;
-        padding-top: 5px;
-    }
-}
-
-
 
 @media screen and (min-width: 1200px){
-    .cabeca{
-        height: 55px;
-        width: 80%;
-       margin: auto;
-    }
-    .fa-bars:before {
-        display: block;
-    }
-    .b3 {
-        display: none;
-    }
    
     .box{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1115,5 +885,7 @@ footer img {
         padding: 70px;
 
     }
-
+    .div h1{
+        margin: 1em;
+    }
 }
