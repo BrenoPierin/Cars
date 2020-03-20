@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARS</title>
+    <script src="https://kit.fontawesome.com/525a7ba6e9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="container cabeca">
+            <div>
+                <a href="index.html">
+                    <img src="img/Logo.png" alt="Logo do site E-Players">
+                </a>
+            </div>
+            <div class="b3">
+                <a href="#" onclick="botaoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+    
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html" title="voltar para a página inicial">Início</a></li>
+                    <li><a href="Carro.html" title="Ir até a sessão do seu carro">Seu Carro</a></li>
+                    <li><a href="Compras.html" title="Ir até a sessão de Compras">Compras</a></li>
+                    <li><a href="Login.html" title="Ir até a sessão de login">Login</a></li>
+                    <li><a href="cadastro.html" title="Ir até a sessão de cadastro">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <div class="secao">
+            <div class="cardo fundo">
+                <img src="img/autoomovel.png" alt="Imagem do Automovel escolhido">
+                <div>
+                    <h2>Selecione o Tipo do Automovel</h2>
+                </div>
+
+            </div>
+                <div class="cardo fundo">
+                    <img src="img/citroenlogo.png" alt="Imagem do Automovel escolhido">
+                    <div>
+                        <h2>Selecione a Marca do Automovel</h2>
+                    </div>
+                </div>
+        </div>
+
+        <div class="secao">
+            <div class="cardo fundo">
+                <img src="img/model.png" alt="Imagem do Automovel escolhido">
+                <div>
+                    <h2>Selecione o Modelo do Automovel</h2>
+                </div>
+
+            </div>
+                <div class="cardo fundo">
+                    <img src="img/cor.png" alt="Imagem do Automovel escolhido">
+                    <div>
+                        <h2>Selecione a Cor do Automovel</h2>
+                    </div>
+                </div>
+        </div>
+        <div class="gradient">
+            <p>Salvar</p>
+        </div>
+ <footer>
+    <div class="container">
+        <div>
+            <h6>INSTITUCIONAL</h6>
+            <nav>
+                <ul>
+                    <li><a href="#">Fale Conocsco</a></li>
+                    <li><a href="#">Regras</a></li>
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Anuncie</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logo">
+            <img src="img/Logo.png" alt="Logo CARS">
+        </div>
+
+        <div class="sociais">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-youtube-square"></i>
+        </div>
+
+
+    </div>
+    <p>© 2019 CARS Eletronic Sports - Todos os direitos reservados</p>
+</footer>
+
+<script>
+    function botaoMenu() {
+
+        var m = document.getElementById("menu");
+        if (m.style.display == "block") {
+            m.style.display = "none";
+        } else {
+            m.style.display = "block"
+        }
+    }
+</script>
+
+</body>
+</html>
