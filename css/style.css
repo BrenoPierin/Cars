@@ -7,12 +7,18 @@ body{
     font-family: 'titillium-web';
     background-color: var(--background);
 }
+
 :root{
     --background: #CCCCCC;
+    --caixa: #484848;
 }
 .gradient{
     background: rgb(102,102,102);
 background: linear-gradient(180deg, rgba(102,102,102,1) 0%, rgba(128,128,128,1) 50%, rgba(160,160,160,1) 100%);
+}
+.container{
+    width:80%;
+    margin:0 auto;
 }
 .cabeca{
     height: 55px;
@@ -22,7 +28,7 @@ background: linear-gradient(180deg, rgba(102,102,102,1) 0%, rgba(128,128,128,1) 
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 .cabeca ul{
     display: flex;
@@ -48,7 +54,6 @@ h1{
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -174,8 +179,7 @@ margin-left: 7em;
             text-transform: lowercase;
             margin-left: 0.5em;
             color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+            }
     label{
         color: white;
     }
@@ -191,7 +195,7 @@ footer{
 box-shadow: 0px 0px 10px black;
 color: white;
 background: rgb(0, 0,0);
-margin-top: 80%;
+margin-top: 1000%;
 }
 footer .container{
 display: flex;
@@ -207,6 +211,7 @@ footer a{
 color: white;
 text-decoration: none;
 padding: 1em;
+margin: 0em;
 }
 footer ul{
 list-style-type: none;
@@ -305,10 +310,38 @@ main .campos{
 
 /* ========responsividade=============== */
 
+
+@media (min-width: 320px){
+    .container{
+        width:90%;
+        margin:0 auto;
+    }
+    .cabeca{
+        background-color: #484848;
+        height: 55px;
+        box-shadow: 0px 6px 3px #484848;
+        display: flex;
+        width:100%;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    .parte2{
+        margin-right: -70px;
+    }
+    .cabeca i{
+        color:white;
+        font-size:27px;    
+    }
+    .cabeca img{
+        width: 81px;
+        height: 52px;
+    }
+}
 @media (min-width: 425px){
 
     .fa-bars:before{
-        display: block;
+        display: none;
     }
     .gradient {
     width: 70%;
@@ -367,7 +400,6 @@ main .campos{
         margin: 0;
         }
     .box{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -394,6 +426,7 @@ main .campos{
 footer .container{
 display: flex;
 justify-content: space-around;
+margin-top: 100%;
 }
 .sociais i{
    display: flex;
@@ -421,70 +454,62 @@ footer img {
     .b3 {
         display: none;
     }
-   
-    .box{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        width: 65%;
-        height: 350px ;
-        font-size: 3em;
-        padding: 90px;
-
+} 
+    footer{
+    box-shadow: 0px 0px 10px black;
+    color: white;
+    background: rgb(0, 0,0);
+    margin-top: 10%;
     }
-    .boxL{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        width: 200%;
-        height: auto;
-        padding: 70px;
-
+    footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     }
-    h1{
-        margin: 1em;
+    footer img{
+        width: 100%;
+        height: 100%; 
     }
-    .cadastro h1{
-        margin: 1em;
+    .logo{
+        width: 157px;
+        height: 100px;
+        padding-right: 150px;
     }
-
-.form_login button{
-        width: 60%;
-        height: 75px;
-        margin-top: 1em;
-       font-size: larger;
-       margin-left: 5em;
-        }
-.form_cadastro button{
-        width: 80%;
-        height: 75px;
-        margin-top: 3em;
-       font-size: large;
-       margin-left: 2em;
-        }
-        .campo{
-font-size: larger
-        }
-
- footer .container{
-display: flex;
-justify-content: space-around;
-font-size: 1.3em;
-            }
- .sociais i{
-   padding: 3px; 
-   font-size: 1em;
-   margin: 0 1em;
-            }
-
- footer p{
-     font-size: 2em;
- }
- footer img {
-    width: 60%;
-    height: 50%;
-    padding-left: -em;
- }
+    footer a{
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    }
+    footer ul{
+    list-style-type: none;
+    }
+    footer .sociais{
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    margin: 1.2em 0px;
+    }
+    footer h6{
+        display: flex;
+        justify-content: space-evenly;
+    padding: 1em;
+    color: #474747;
+    font-size: 1em;  
+    }
+    footer li{
+    font-size: 1em;
+    }
+    footer p{
+    text-align: center;
+    color: #474747;
+    }
 }
+@media (max-width:425px){
+    .logo{
+        padding-right: 70px;
+    }
 }
-}
-/* ------------- novo------------------------------------------------------------------------------------------------ */
+/* -------------Inicio------------------------------------------------------------------------------------------------ */
 
 .box{
     font-family: "titillium-web";
@@ -553,7 +578,6 @@ font-size: 1.3em;
         margin: 0;
         }
     .box{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         display: flex;
         width:100%;
         justify-content: space-around;
@@ -871,7 +895,6 @@ font-size: 1.3em;
 @media screen and (min-width: 1200px){
    
     .box{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width: 65%;
         height: 350px ;
         font-size: 3em;
@@ -879,7 +902,6 @@ font-size: 1.3em;
 
     }
     .box1{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width: 200%;
         height: auto;
         padding: 70px;
@@ -889,3 +911,266 @@ font-size: 1.3em;
         margin: 1em;
     }
 }
+
+
+/* ------------------ confeccione seu carro-------------------- */
+.fundo{
+    background-color: #484848;
+    box-shadow: 0px 6px 3px #484848;
+}
+.secao{
+    width: 100%;
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    color: white;
+}
+.cardo{
+    width: 45%;
+    margin: 2%;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.cardo img{
+    width: 100%;
+    padding: 10px;
+}
+.cardo h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    padding: 5px;
+    text-transform: uppercase;
+}
+p{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 15px;
+}
+
+@media (min-width: 426px){
+    .gradient {
+        width: 70%;
+        height: 60px;
+        margin-right: 35%;
+    }
+}
+
+@media (min-width: 768px){
+    .gradient {
+        width: 70%;
+        height: 60px;
+        margin-left: 15%;
+    }
+    .gradient p{
+        padding-top: 20px;
+        font-size: 1.5em;
+    }
+    .cardo{
+        width: 70%;
+    }
+    .cardo img{
+        width: 89%;
+        padding: 25px;
+    }
+    .secao{
+        padding: 0;
+        margin: 0;
+    }
+}
+@media (min-width: 1200px){
+    .gradient {
+        width: 60%;
+        height: 60px;
+        margin-left: 20%;
+        padding: 10px;
+    }
+    .gradient p{
+        font-size: 3em;
+        padding: 10px;
+    }
+    .cardo{
+        width: 700px;
+        padding: 5em;
+    }
+    .cardo img{
+        padding: 5em;
+        width: 80%;
+    }
+}
+
+/* -------------------Pré-visualização-------------------- */
+
+.containers{
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.containers h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 70px;
+    font-family: 'Titillium Web';
+}
+.caixas{
+    width: 80%;
+    height: 121px;
+    background-color: var(--caixa);
+    margin: 0 auto;
+    margin-top: 20px;
+    color: white;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 13px 10px #484848;
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa_h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.3em;
+    font-size: 1em;
+}
+
+.caixas p{
+    font-size: 10px;
+    padding: 0 1.3em;
+}
+
+.caixas2{
+    width: 80%;
+    height: 68px;
+    background: var(--caixa);
+    margin: 0 auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px #484848;
+}
+
+a{
+    padding: 10px 30px;
+    margin-left: 100px;
+}
+
+
+.caixas2 a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 5px; 
+    border: none;
+    margin-left: 100px;
+}
+
+.caixas2{
+    display: flex;
+    align-items: center;
+    
+}
+
+.botao{
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 425px){
+    .img2{
+        width: 5em;
+    }
+}
+
+@media screen and (min-width: 768px){
+.caixas2 a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 5px; 
+    border: none;
+    margin-left: 14em;
+}
+
+.containers h1{
+    font-size: 2.5em;
+}
+
+.caixas{
+    margin-top: 4em;
+    height: 10em;
+    border-radius: 8px;
+}
+
+.caixas{
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa_h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+
+.caixas p{
+    font-size: 15px;
+    padding: 0 2em;
+}
+
+.caixas2{
+    margin-top: 6em;
+    border-radius: 8px;
+    height: 7em;
+}
+
+.caixas2 a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 80px;
+    border-radius: 5px; 
+    border: none;
+    margin-left: 50%;
+    text-transform: uppercase;
+}
+
+.botao{
+    margin-left: 6em;
+}
+}
+
+@media screen and (min-width: 1200px){
+    
+
+    .caixas{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caixas_h3{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5em;
+        font-size: 1.5em;
+    }
+
+    .caixas p{
+        font-size: 1em;
+        padding: 0 4em;
+    }
+
+    .caixas2 a{
+        color: white;
+        text-decoration: none;
+        padding: 10px 40px;
+        border-radius: 5px; 
+        border: none;
+        margin-left: 20em;
+    }
+
+}
+
+
